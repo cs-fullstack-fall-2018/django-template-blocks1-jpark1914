@@ -2,7 +2,7 @@
 
 THIS IS A SOLO CLASSWORK
 
-Use your previous movie app and base html files. Create template blocks for your header and footer in your base.html file. Create a new page called newIndex that changes your header, footer, and provides a different view of your databse. Call this page via a different route.
+Use your previous movie app and base html files. Create template blocks for your header and footer in your base.html file. Create a new page called newIndex that changes your header, footer, and provides a different look of the data in your database. Call this page via a different route.
 
 Extra work:
 On a side panel on your page, include only movie names.
