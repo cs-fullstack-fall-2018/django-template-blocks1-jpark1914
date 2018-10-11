@@ -2,7 +2,7 @@
 
 THIS IS A SOLO CLASSWORK
 
-Use your previous movie app and base html files. Create template blocks in your index and about pages and create a new history page. Make sure your base html file includes a bootstrap jumbotron.
+Use your previous movie app and base html files. Create template blocks for your header and footer in your base.html file. Create a new page called newIndex that changes your header, footer, and provides a different view of your databse. Call this page via a different route.
 
 Extra work:
 On a side panel on your page, include only movie names.
