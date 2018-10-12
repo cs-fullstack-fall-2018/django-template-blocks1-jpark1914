@@ -1,0 +1,54 @@
+{% extends 'movieApp/base.html' %}
+
+{% block sidebar %}
+<ul>
+
+    <li><a href="/about">About</a></li>
+    <li><a href="/test">Test</a></li>
+    <li><a href="/newIndex">Change View</a></li>
+    <li><a href="/">Original View</a></li>
+
+</ul>
+<ul>
+    {% for movie in movie_list2 %}
+    <li>{{movie.name}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+
+{%block header %}
+<h1>Welcome to the Slightly Upgraded View</h1>
+<h5>Honestly I just added Cards in A Row</h5>
+{% endblock %}
+
+
+{% block body %}
+<div class="row">
+<h1>Here Are Some Movies</h1>
+</div>
+{% if movie_list2 %}
+
+<div class="row">
+    {% for movie in movie_list2 %}
+    <div class="card col-4" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{movie.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{movie.genre}}</h6>
+            <p class="card-text">Age Requirement: {{movie.ageAllowed}}.</p>
+            <p class="card-text">Movie Released: {{movie.yearReleased}}.</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
+
+{% endblock %}
+
+{% block footer %}
+<h3> This footer isn't any better, but here's a button that does nothing</h3>
+<button class="btn btn-danger">Nothing Button</button>
+{% endblock %}

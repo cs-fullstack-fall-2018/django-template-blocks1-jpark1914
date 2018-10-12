@@ -1,0 +1,20 @@
+{% extends 'movieApp/base.html' %}
+
+{% block body %}
+<h1>Here Are The PlayList Songs</h1>
+{% if movie_list %}
+<ul>
+    {% for movie in movie_list %}
+    <li>{{ movie.name }}</li>
+    <li>{{ movie.ageAllowed }}</li>
+    <li>{{ movie.yearReleased }}</li>
+    <li>{{ movie.genre }}</li>
+    <hr/>
+
+    {% endfor %}
+</ul>
+{% else %}
+<p>No polls are available.</p>
+{% endif %}
+
+{% endblock %}
